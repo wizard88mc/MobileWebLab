@@ -1,0 +1,112 @@
+/*Import del file css contenente le aggiunte per lo standard css3*/
+*, html{
+	margin:0;
+	padding:0;
+}
+
+body{
+	margin:0;
+	padding:0;
+	margin-left:0em;
+	margin-right:0em;
+	margin-top:0em;
+	background-color:white;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:black;
+}
+
+a[href]:after{
+	content: "["attr(href)"]";
+	font-size:80%;
+}
+
+a {
+	color:blue;
+}
+
+a:visited a:active a:link{
+	color:blue;
+}
+
+.help{
+	display:none;
+}
+
+#header{
+	position:relative;
+	top:0;
+	background-color: #9b0014;
+	width:100%;
+	height:auto;
+	margin:0em;
+	margin-right:0em;
+	margin-left:0em;
+	padding:0em;
+	padding-bottom:1.3em;
+}
+
+#header .logo{
+	display:none;
+}
+
+#header .logoprint{
+	position:relative;
+	float:left;
+	height:7em;
+	width:15em;
+	padding:1em;
+}
+
+#title {
+	text-align:left;
+	color:black;
+	padding-top:1.5em;
+}
+
+#topmenu{
+	display:none;
+}
+
+#wrapperbody {
+	border-style: none;
+}
+
+#sidebar{
+	display:none;
+}
+
+#content{
+	padding:0em;
+	padding-top:0.5em;
+	background:#fff;
+	margin-left:0em;
+	margin-right:0em;
+}
+
+
+#content h2, h3, h4 {
+	color:#9b0014;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+#content h2:first-letter{
+	font-size:1.2em;
+}
+
+
+#tecWebGarden{
+	float:left;
+	color:white;
+	margin-top:0em;
+	margin-left:1em;
+}
+
+#path{
+	display:none;
+}
+
+#footer{
+	display:none;
+}

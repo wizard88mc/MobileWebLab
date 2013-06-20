@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+*, html{
+	margin:0;
+	padding:0;
+}
+
+body{
+	margin:0;
+	padding:0;
+	margin-left:5em;
+	margin-right:5em;
+	margin-top:1em;
+	background-color:#C9C9C9;
+	background-attachment:fixed;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:black;
+}
+
+
+/*HEADER*/
+#header{
+	position:relative;
+	top:0;
+	background-color: #9b0014;
+	width:100%;
+	height:auto;
+	margin:0em;
+	margin-right:0em;
+	margin-left:0em;
+	padding:0em;
+	padding-bottom:1.3em;
+}
+
+#header .logoprint{
+	display:none;
+}
+
+#header .logo{
+	position:relative;
+	float:left;
+	height:7em;
+	width:15em;
+	padding:1em;
+	padding-right:2em;
+}
+
+#title {	
+	color:white;
+	padding-top:1.5em;
+	padding-left:1.5em;
+	padding-bottom:4.5em;
+	border:1px solid #300;
+}
+
+.titlepart{
+	display:block;
+}
+
+#wrapper {
+	width:100%;
+	background-color:#4D4D4D;
+	background-image:url(../images/onlylogo.png);
+	background-repeat: no-repeat;
+	background-position: 1em 15em;
+	
+}
+
+#wrapperbody {
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/*MENU*/
+
+#sidebar{	
+	display:block;
+	float:left;
+	width:15%;
+	height:100%;
+	margin-left:0.5em;
+	margin-right:0em;
+	padding-top:2em;
+	color:white;
+}
+
+#sidebar ul{
+	list-style-type:none;
+}
+
+#sidebar li{
+	margin-bottom:1.0em;
+	padding-left:0.2em;
+}
+
+#secondMenu > li{
+	padding-left:2.0em;
+}
+
+#sidebar a{
+	color:#FFFFFF;
+	display:block;
+}
+
+#sidebar a:hover{
+	background-color:#666666;
+	color:black;
+}
+
+#sidebar a:visited{
+	color:#9b0014;
+}
+
+#sidebar .help{
+	display:none;
+}
+
+
+.linknoactive{
+	background:#9b0014;
+	font-weight:bold;
+	color:white;
+	padding:0.3em;
+}
+
+/*CONTENUTO*/
+
+#content{
+	padding:1.5em;
+	padding-top:0.5em;
+	background:#fff;
+	margin-left:16.5%;
+	margin-right:0em;
+	min-height:22.9em;
+	padding-bottom:5.0em;
+}
+
+#content ol {
+	margin-left: 1.5em;
+}
+
+#content ul {
+	margin-left: 1.5em;
+}
+
+#content li {
+	margin-left: 1.5em;
+}
+
+#content h2, h3, h4 {
+	color:#9b0014;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+
+.infoPeople {
+	border:1px solid #4D4D4D;
+	border-top:#FFF;
+	padding-top:0.5em;
+	padding-bottom:0.5em; 
+}
+.peopleDetails {
+	list-style-type:none;
+	
+}
+.photoDetails {
+	width:10%;
+	border:1px solid #4D4D4D;
+}
+
+#content a {
+	color:blue;
+	text-decoration:underline;
+}
+
+#content a:visited {
+	color: #9b0014;
+}
+
+/*PERCORSO*/
+
+#path{
+	background-color:#333333;
+	background-image:url(../images/menu-bg.gif);
+	background-repeat:repeat-x;
+	height:1.9em;
+	color:white;
+	margin-left:0em;
+	padding-top:0.5em;
+	padding-left:0.5em;
+}
+
+/*FOOTER*/
+
+#footer{
+	clear:both;
+	background-color:#333333;
+	width:100%;
+	height:auto;
+	padding-top:1em;
+	padding-bottom:0.5em;
+	color:white;
+	text-align:center;
+	font-size:80%;
+	border-top-style: solid;
+	border-top-color: #9b0014;
+	border-top-width: 2px;
+}
+
+#footer a{
+	color:#FFFFFF;
+}
+
+#footer a:hover{
+	text-decoration:none;
+}
+
+#footer a:visited{
+	color:#FFFFFF;
+}
+
