@@ -1,61 +1,107 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
+<!doctype html>
+<html lang="en">
 <head>
 	<title>People - Mobile Web Lab</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-	<meta name="title" content="People - Mobile Web Lab" />
-    <meta name="description" content="Home page di Mobile Web Lab" />
-    <meta name="keywords" content="Tecnologie Web, laurea in Informatica, Università di Padova" />
-    <meta name="author" content="Enrico - Marco - Gabriele - Alessio - Yevgen" />
-    <meta name="language" content="italian it" />
+    <meta charset="utf-8">
+    <meta name="description" content="List of people involved in the Mobile Web Lab, coming from different Departments of the University of Padua, Italy" />
+    <meta name="keywords" content="People, Full Professors, Associate Professors, Assistant Professors, PhD students, Master Students, Departments, University of Padua" />
+    <meta name="author" content="Anna Nigro, Matteo Ciman" />
     <link href="styles/baseStyle.css" rel="stylesheet" type="text/css" media="screen"/>
 	<link href="styles/stylemobile.css" rel="stylesheet" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" />
 	<link href="styles/stylelittle.css" rel="stylesheet" media="only screen and (max-width: 800px), only screen and (max-device-width: 800px)" />
     <link href="styles/styleprint.css" rel="stylesheet" type="text/css" media="print"/>
+   	<script src="js/jquery.js"></script>
+    <script src="js/people.js"></script>
 	
 </head>
 <body>
 	
 	<div id="wrapperbody">
-	<div id="header">
-		<img src="images/logoblack.png" class="logoprint" alt="Logo dell'Università degli studi di Padova - Logo nero per la Stampa"/>
-		<img src="images/logo.png" class="logo" alt="Logo dell'Università degli studi di Padova."/>
-		<div id="title">
-			<h1>Mobile Web Lab</h1>
-			
-		</div>
-		
-	</div>
-	<div id="path">You are in: Mobile Web Lab  &gt&gt; People</div>
+	<header id="header">
+		<img src="images/logoblack.png" class="logoprint" alt="Logo dell'UniversitÃ  degli studi di Padova - Logo nero per la Stampa"/>
+		<img src="images/logo.png" class="logo" alt="Logo dell'UniversitÃ  degli studi di Padova."/>
+		<h1 id="title">Mobile Web Lab</h1>	
+	</header>
+	<div id="path">You are in: Mobile Web Lab  &gt;&gt; People</div>
 	<div id="wrapper">
-		<div id="sidebar">
-			
+		<nav id="sidebar">
 			<ul>
 				<li><a href="index.html" tabindex="1">HOME</a></li>			
                 <li><a href="research.html" tabindex="2">RESEARCH</a></li>
-				<li class="linknoactive">PEOPLE</li>
+				<li><div class="linknoactive">PEOPLE</div>
                 	<ul id="secondMenu">
-                    	<li><a href="Actual.html" tabindex="3">Actual</a></li>
-                        <li>Passati</li>
+                        <li>Past</li>
                     </ul>
+                    </li>
 				<li><a href="pubblications.html" tabindex="4">PUBBLICATIONS</a></li>
 				<li><a href="download.html" tabindex="5">DOWNLOAD</a></li>
                 <li><a href="contactus.html" tabindex="6">CONTACT US</a></li>
 			</ul>
-		</div>
+		</nav>
 		<div id="content">
-			
-     
+        	<header>
+				<h1>People</h1>
+            </header>
+            <section>
+            	<header>
+            	<h2>Associate Professors</h2>    
+                </header>
+                <dl>
+                	<dt> - Claudio Enrico Palazzi <span class="showInfo">Show more info &#9660;</span></dt>
+                    	<dd class="infoPeople">
+                        <img class="photoDetails" src="images/cla_web.jpg" alt="Photo of Claudio Enrico Palazzi" />
+                        <address class="peopleDetails">
+                        	Department of Mathematics, University of Padua, Italy <br />
+                            Email: cpalazzi@math.unipd.it <br />
+                            Web site: <a href="http://www.math.unipd.it/~cpalazzi/">www.math.unipd.it/~cpalazzi/</a>
+                        </address>
+                        <span class="hideInfo">Hide info &#9650;</span>
+                        </dd>
+                </dl>
+            </section>
+            
+            	
+            <section>
+            	<header>
+	            <h2>Assistant Professors</h2>
+                </header>
+                
+                <dl class="allInfosVisible">
+                <dt>
+                	Ombretta Gaggi
+                </dt>
+                <dd>
+                	<img class="photoDetails" src="images/cla_web.jpg" alt="Photo of Claudio Enrico Palazzi" />
+                  	<address class="peopleDetails">
+                    	Department of Mathematics, University of Padua, Italy <br />
+                        Email: gaggi@math.unipd.it <br />
+                        Web site: <a href="http://www.math.unipd.it/~gaggi/">www.math.unipd.it/~gaggi/</a>
+                  	</address>
+                </dd>
+                </dl>
+                
+            </section>
+            
+            <section>
+            	<header>
+                <h2>PhD Students</h2>
+                </header>
+                <ul>
+                <li>Matteo Ciman</li>
+                </ul>
+            </section>
+            
+            	
+            
+            <h2>Master Students</h2>
 		</div>
 	</div>
-	<div id="footer">
+	<footer id="footer">
 		<img src="images/css.bmp" class="valid" alt="CSS Valid!"/>
         <img src="images/xhtml.bmp" class="valid" alt="XHTML 1.0 Valid!"/>
         <img src="http://feed2.w3.org/images/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /><br/>
-        Ultima modifica: <script type="text/javascript"  src="js/ultima_modifica.js"></script>
-        <noscript><p>Attiva <span xml:lang="en">javaScript</span> per vedere la data di modifica</p></noscript>
-        <p><a href="credit.html"  title="I Crediti relativi agli autori del sito">Crediti</a> | <span xml:lang="en">Template Copyright &copy;</span> 2012 - Enrico - Marco - Gabriele - Alessio - Yevgen</p>
-	</div>
+        <p><a href="credit.html"  title="Credits for this site">Credits</a> | Template Copyright &copy; 2013 </p>
+	</footer>
 	</div>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NewsList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="definition/news.xsd" IDLastNews="1">
+
+<News>
+<ID>3</ID>
+<Title>Future news</Title>
+<Author>Matteo Ciman</Author>
+<StartDate>2013-07-01</StartDate>
+<Time>09:00:00</Time>
+<EndDate>2013-07-08</EndDate>
+<Text>In the future we will have no money...help us...:)</Text>
+</News>
+
+<News>
+<ID>2</ID>
+<Title>Website online</Title>
+<Author>Matteo Ciman</Author>
+<StartDate>2013-07-01</StartDate>
+<Time>09:00:00</Time>
+<EndDate>2013-07-08</EndDate>
+<Text>The new website of the MobileWebLab group of the University of Padua is online!!!</Text>
+</News>
+
+
+
+<News>
+<ID>1</ID>
+<Title>News di prova scaduta</Title>
+<Author>Matteo Ciman</Author>
+<StartDate>2013-05-01</StartDate>
+<Time>09:00:00</Time>
+<EndDate>2013-05-10</EndDate>
+<Text>The project idea has been defined and we are ready to start...</Text>
+</News>
+
+</NewsList>

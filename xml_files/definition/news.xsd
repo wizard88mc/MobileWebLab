@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	
+	<xs:element name="NewsList" type="TNewsList" />
+	
+	<xs:complextType name="TNewsList">
+		<xs:sequece minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="News" type="TNews" />
+		</xs:sequece>
+	</xs:complextType>
+	
+	<xs:complexType name="TNews">
+		<xs:sequence minOccurs="1" maxOccurs="1">
+			<xs:element name="ID" type="xsd:integer" />
+			<xs:element name="Title" type="xsd:string" />
+			<xs:element name="Author" type="xsd:string" />
+			<xs:element name="StartDate" type="xsd:date" />
+			<xs:element name="Time" type="xs:time" />
+			<xs:element name="EndDate" type="xsd:date" />
+			<xs:element name="Text" type="xsd:string" />
+		</xs:sequence>
+	</xs:complextType>
+	
+</xs:schema>

@@ -15,7 +15,7 @@ body{
 	background-color:#C9C9C9;
 	background-attachment:fixed;
 	font-family:Verdana, Geneva, sans-serif;
-	font-size:14px;
+	font-size:0.9em;
 	color:black;
 }
 
@@ -50,9 +50,8 @@ body{
 #title {	
 	color:white;
 	padding-top:1.5em;
-	padding-left:1.5em;
-	padding-bottom:4.5em;
-	border:1px solid #300;
+	padding-bottom:1.5em;
+	text-align: center;
 }
 
 .titlepart{
@@ -89,6 +88,7 @@ body{
 
 #sidebar ul{
 	list-style-type:none;
+	margin-top: 0.3em;
 }
 
 #sidebar li{
@@ -96,8 +96,16 @@ body{
 	padding-left:0.2em;
 }
 
+#sidebar li * {
+	padding: 0.2em 0em 0.2em 0.3em;
+}
+
 #secondMenu > li{
-	padding-left:2.0em;
+	padding: 0em 0em 0em 2.0em;
+}
+
+#secondMenu *:last-child {
+	margin-bottom: 0em;
 }
 
 #sidebar a{
@@ -111,7 +119,7 @@ body{
 }
 
 #sidebar a:visited{
-	color:#9b0014;
+	color:#F2C9A0 ;
 }
 
 #sidebar .help{
@@ -120,6 +128,7 @@ body{
 
 
 .linknoactive{
+	display: block;
 	background:#9b0014;
 	font-weight:bold;
 	color:white;
@@ -136,6 +145,10 @@ body{
 	margin-right:0em;
 	min-height:22.9em;
 	padding-bottom:5.0em;
+}
+
+#content > header {
+	text-align: center;
 }
 
 #content ol {
@@ -162,13 +175,45 @@ body{
 	padding-top:0.5em;
 	padding-bottom:0.5em; 
 }
-.peopleDetails {
-	list-style-type:none;
-	
-}
+
 .photoDetails {
+	display: inline-block;
 	width:10%;
 	border:1px solid #4D4D4D;
+	margin-bottom: 1.0em;
+	margin-left: 1.0em;
+	vertical-align: middle;
+}
+
+.peopleDetails {
+	display: inline-block;
+	margin-left: 1.0em;
+}
+
+.showInfo, .hideInfo {
+	text-decoration: underline;
+	color: #9B0014;
+	cursor: pointer;
+}
+
+.hideInfo {
+	text-align: center;
+	display: block;
+}
+
+.allInfosVisible dt {
+	color: #FFF;
+	background-color: #9B0014;
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+.allInfosVisible dd {
+	background-color: rgba(155, 0, 20, 0.3);
+}
+
+.allInfosVisible dd img {
+	margin-top: 0.5em;	
 }
 
 #content a {
@@ -178,6 +223,27 @@ body{
 
 #content a:visited {
 	color: #9b0014;
+}
+
+#activeNews article {
+	margin-bottom: 2.0em;	
+} 
+
+#activeNews article header h1, #expiredNews article header h1 {
+	font-size: 2.0em;
+	color: #9B0014;
+	margin-top: 0.5em;
+	font-weight: normal;
+}
+
+#activeNews article header h2, #expiredNews article header h2 {
+	color: #000;
+	margin-top: 0.3em;
+	border-bottom: 1px solid #000;
+	padding-bottom: 0.3em;
+	font-style: italic;
+	font-size: 1.0em;
+	font-weight: normal;
 }
 
 /*PERCORSO*/
@@ -222,3 +288,6 @@ body{
 	color:#FFFFFF;
 }
 
+.hide {
+	display: none;
+}

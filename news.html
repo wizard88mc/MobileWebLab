@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Home - Mobile Web Lab</title>
+	<title>News - Mobile Web Lab</title>
     <meta charset="utf-8">
-    <meta name="description" content="The Mobile Web Lab is an interdisciplinary group of the University of Padua that invoves several Professors, Assistant Professors, PhD students and MsC students from different departments, like the Department of Mathematics or the Department of General Psycology." />
+    <meta name="description" content="Lastest news about our group." />
     <meta name="keywords" content="Mobile Web Lab, Department of Mathematics, University of Padua, Smartphones, Tablets, Serious Games, HCI, Human Computer Interaction" />
     <meta name="author" content="Anna Nigro, Matteo Ciman" />
     <link href="styles/baseStyle.css" rel="stylesheet" type="text/css" media="screen"/>
 	<link href="styles/stylemobile.css" rel="stylesheet" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" />
 	<link href="styles/stylelittle.css" rel="stylesheet" media="only screen and (max-width: 800px), only screen and (max-device-width: 800px)" />
     <link href="styles/styleprint.css" rel="stylesheet" type="text/css" media="print"/>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
 	
 </head>
 <body>
@@ -20,15 +23,15 @@
 		<img src="images/logo.png" class="logo" alt="Logo dell'Università degli studi di Padova."/>
 		<h1 id="title">Mobile Web Lab</h1>
 	</header>
-	<div id="path">You are in: Mobile Web Lab</div>
+	<div id="path">You are in: Mobile Web Lab &gt;&gt; News</div>
 	<div id="wrapper">
 		<nav id="sidebar">
 			
 			<ul>
-				<li><div class="linknoactive">HOME</div>
+				<li><a href="index.html">HOME</a>
                 	<ul id="secondMenu">
                     	<li>About us</li>
-                        <li>News</li>
+                        <li><div class="linknoactive">News</div></li>
                         <li>Events</li>
                     </ul>
                     </li>
@@ -41,6 +44,17 @@
 		</nav>
 		<div id="content">
 			
+            <article id="activeNews">
+            	<header>
+                	<h1>Active News</h1>
+                </header>
+            </article>
+            
+            <article id="expiredNews">
+            	<header>
+                	<h1>Expired News</h1>
+                </header>
+            </article>
            
 		</div>
 	</div>
