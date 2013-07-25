@@ -25,20 +25,20 @@ function readXML(xml) {
 		var startDate = new Date(startDateString.substr(0,4),startDateString.substr(5,2) - 1,startDateString.substr(8,2));
 		var endDate = new Date(endDateString.substr(0,4),endDateString.substr(5,2) - 1,endDateString.substr(8,2));
 		
+		var article = $('<article>').text(text);
+		$('<h1>').text(title).appendTo($('<header>').prependTo(article));
+		$('<h2>').text('Writter by ' + author + ' on ' + startDateString + ' at ' + time)
+			.appendTo(article.children('header'));
+		
 		var now = new Date();
 		
 		if (startDate <= now && endDate >= now) {
 			
-			var article = $('<article>');
-			article.text(text);
-			$('<h1>').text(title).appendTo($('<header>').prependTo(article));
-			$('<h2>').text('Writter by ' + author + ' on ' + startDateString + ' at ' + time)
-				.appendTo(article.children('header'));
-			
-			
-			
 			article.appendTo('#activeNews');
 		}
-		
+		else if (startDate <= now && endDate <= now) {
+			
+			article.appendTo('#expiredNews');
+		}
 	});
 }
